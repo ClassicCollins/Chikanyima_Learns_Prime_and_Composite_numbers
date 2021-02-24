@@ -1,0 +1,13 @@
+def isprime_or_composite(n):
+    if n == 1:
+      print ("1 is a special number")
+      return False
+    for x in range(2,n):
+       if n%x == 0:
+          print (" {} is composite number equals {} x {}". format (n, x, n//x))
+          return False
+       else:
+          print(n, "is a prime number")
+          return True
+n = int(input("Welcome Chukwukanyima! Enter a number b/w 1 and 100: "))
+isprime_or_composite(n)
